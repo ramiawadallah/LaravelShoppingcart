@@ -320,6 +320,19 @@ class Cart
         $this->session->put($this->instance, $content);
     }
 
+
+     /**
+     * Get the total price of the items in the cart.
+     *
+     * @return float
+     */
+    public function totalFloat()
+    {
+        return $this->getContent()->reduce(function ($total, CartItem $cartItem) {
+            return $total + $cartItem->total;
+        }, 0);
+    }
+
     /**
      * Set the tax rate for the cart item with the given rowId.
      *
