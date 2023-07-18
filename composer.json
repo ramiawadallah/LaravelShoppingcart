@@ -1,5 +1,5 @@
 {
-    "name": "xenon/shoppingcart",
+    "name": "cart/shoppingcart",
     "description": "Laravel Shoppingcart",
     "keywords": ["laravel", "shoppingcart"],
     "license": "MIT",
